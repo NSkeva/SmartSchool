@@ -2,7 +2,6 @@ import React,{useState} from 'react';
 import { Text, View, StyleSheet,Button, FlatList } from 'react-native';
 import SubjectCard from './subjectCard';
 import { Dimensions } from 'react-native';
-import symbolicateStackTrace from 'react-native/Libraries/Core/Devtools/symbolicateStackTrace';
 
 export default function MainMenu({ navigation }) {
   const [subjects,setSubjects]=useState([
