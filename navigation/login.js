@@ -1,5 +1,5 @@
-import React from 'react';
-import { Text, View, StyleSheet,Button, TextInput } from 'react-native';
+import React,{useState} from 'react';
+import { Text, View, StyleSheet, TextInput,FlatList,Button } from 'react-native';
 
 
 export default function Login({ navigation }) {
@@ -10,8 +10,8 @@ export default function Login({ navigation }) {
       <Text style={styles.text}>Password:</Text>
       <TextInput style={styles.input}></TextInput>
       <Button
-        title="Login"
-        onPress={() => navigation.navigate('MainMenu')}
+      title="Login"
+      onPress={() => navigation.navigate('MainMenu')}
       />
     </View>
   );
@@ -27,9 +27,10 @@ const styles = StyleSheet.create({
       fontSize:20
     },
     input:{
+      minWidth:300,
       borderColor:'grey',
       borderWidth:1,
       padding:3,
       margin:10
-    }
+    },
   });

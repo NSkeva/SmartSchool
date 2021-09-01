@@ -7,10 +7,11 @@ import MainMenu from './mainMenu';
 const Stack=createStackNavigator({
     Login:{
         screen: Login,
-        
+        navigationOptions:{title: 'Login'}
     },
     MainMenu:{
-        screen: MainMenu
+        screen: MainMenu,
+        navigationOptions:{title: 'Main Menu'}
     },
     Library:{
         screen: Library

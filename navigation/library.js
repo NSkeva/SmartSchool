@@ -1,12 +1,12 @@
 import React from 'react';
-import { Text, View, StyleSheet,Button } from 'react-native';
+import { Text, View, StyleSheet,} from 'react-native';
 
 
 export default function Library({ navigation }) {
+  
   return (
     <View style={styles.container}>
-      <Text>Library</Text>
-      <Button title="Go back" onPress={() => navigation.goBack()} />
+      <Text style={styles.text}>Odabrali ste predmet naziva {navigation.getParam('name')}!</Text>
     </View>
   );
 }
@@ -16,5 +16,10 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
+    },
+    text: {
+      fontSize:40,
+      fontWeight:'bold',
+      textAlign:'center'
     },
   });
