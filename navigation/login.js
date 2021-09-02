@@ -8,7 +8,7 @@ export default function Login({ navigation }) {
     <Text style={styles.text}>Username:</Text>
       <TextInput style={styles.input}></TextInput>
       <Text style={styles.text}>Password:</Text>
-      <TextInput secureTextEntry='true'
+      <TextInput secureTextEntry={true}
 
       style={styles.input}></TextInput>
       <Button
