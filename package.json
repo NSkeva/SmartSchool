@@ -6,8 +6,12 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "eject": "expo eject",
     "build": "npm build"
+=======
+    "eject": "expo eject"
+>>>>>>> parent of a0abf27 (Merge branch 'master' of https://github.com/NSkeva/SmartSchools)
 =======
     "eject": "expo eject"
 >>>>>>> parent of a0abf27 (Merge branch 'master' of https://github.com/NSkeva/SmartSchools)
